@@ -28,12 +28,14 @@
     padding: 64px 24px 80px;
   }
   .badge {
-    width: 56px; height: 56px;
-    border-radius: 14px;
-    background: var(--accent);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 28px;
+    width: 80px; height: 80px;
+    border-radius: 18px;
+    overflow: hidden;
     margin-bottom: 24px;
+  }
+  .badge img {
+    width: 100%; height: 100%;
+    display: block;
   }
   h1 { font-size: 32px; letter-spacing: -0.5px; margin: 0 0 8px; }
   .tagline { color: var(--ink-soft); font-size: 17px; margin: 0 0 40px; }
@@ -57,7 +59,7 @@
 </head>
 <body>
   <div class="wrap">
-    <div class="badge">👚</div>
+    <div class="badge"><img src="app-icon.png" alt="Wardrobe Log"></div>
     <h1>Wardrobe Log</h1>
     <p class="tagline">A gentle way to track what you buy and stay on budget.</p>
     <div class="links">
