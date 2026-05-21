@@ -25,4 +25,4 @@ Once GitHub Pages is enabled (see below):
 
 ## Contact
 
-cami.ps25@gmail.com
+gomez.viry@gmail.com
