@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wardrobe Log</title>
+<style>
+  :root {
+    --bg: #F3EFE9;
+    --card: #FFFFFF;
+    --ink: #1C1A17;
+    --ink-soft: rgba(28, 26, 23, 0.62);
+    --accent: #C97A6E;
+    --line: rgba(28, 26, 23, 0.10);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 64px 24px 80px;
+  }
+  .badge {
+    width: 56px; height: 56px;
+    border-radius: 14px;
+    background: var(--accent);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+  h1 { font-size: 32px; letter-spacing: -0.5px; margin: 0 0 8px; }
+  .tagline { color: var(--ink-soft); font-size: 17px; margin: 0 0 40px; }
+  .links { display: flex; flex-direction: column; gap: 12px; }
+  a.tile {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 18px 20px;
+    text-decoration: none;
+    color: var(--ink);
+    transition: transform 0.1s ease;
+  }
+  a.tile:hover { transform: translateY(-1px); }
+  a.tile .t { font-weight: 600; font-size: 16px; }
+  a.tile .d { color: var(--ink-soft); font-size: 14px; }
+  footer { margin-top: 56px; color: var(--ink-soft); font-size: 13px; }
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="badge">👚</div>
+    <h1>Wardrobe Log</h1>
+    <p class="tagline">A gentle way to track what you buy and stay on budget.</p>
+    <div class="links">
+      <a class="tile" href="support.html">
+        <div class="t">Support</div>
+        <div class="d">Questions, how-tos, and how to reach us</div>
+      </a>
+      <a class="tile" href="privacy.html">
+        <div class="t">Privacy Policy</div>
+        <div class="d">What the app stores and what it doesn't</div>
+      </a>
+    </div>
+    <footer>
+      Need a hand? Email <a href="mailto:cami.ps25@gmail.com">cami.ps25@gmail.com</a>
+    </footer>
+  </div>
+</body>
+</html>
